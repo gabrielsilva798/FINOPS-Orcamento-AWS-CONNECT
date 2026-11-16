@@ -5,8 +5,6 @@ Documentação do fluxo de atendimento do **Service Desk de TI** (voz e chat) co
 > **Status:** fluxo de testes (`Fluxo-ServiceDesk-TI-TESTE-Protocolo`), publicado, `us-east-1`.
 > **Escopo de custo:** service desk **interno**: telefonia (número DID e minutos de entrada) **não incluída**.
 
-<!-- Espaço reservado para a imagem de abertura -->
-![Orçamento do Service Desk de TI](imagem/orcamento.PGN)
 
 ## 1. Visão geral
 
@@ -275,8 +273,6 @@ Ordenadas por impacto estimado (valores aproximados e dependentes das premissas)
 - **Limite de chamadas simultâneas:** verificar a cota da instância (o padrão é baixo) e pedir aumento antes de produção.
 - **Identificadores da conta:** o JSON do fluxo contém ID da conta AWS, ID da instância, ARNs de filas e do bot Lex. **Não publique esses valores em repositório público**; substitua por placeholders (`<ACCOUNT_ID>`, `<INSTANCE_ID>`, `<QUEUE_ID>`, `<BOT_ALIAS_ID>`) antes do commit.
 
-<!-- Espaço reservado para a segunda imagem -->
-![Orçamento do Service Desk de TI (detalhe)](imagem/orcamento.PGN)
 
 ---
 
@@ -299,5 +295,8 @@ Ordenadas por impacto estimado (valores aproximados e dependentes das premissas)
 
 **Fontes**
 
-- Preços e documentação oficiais da AWS: Amazon Connect (página de preços e apêndice), Amazon Lex (preços), AWS Lambda, Amazon S3 e Amazon CloudWatch.
+- Preços e documentação oficiais da AWS: Amazon Connect (página de preços e apêndice), Amazon Lex (preços), AWS Lambda, Amazon S3, Amazon CloudWatch.
+- [Amazon Connect FinOps: Cost Optimization & Usage Audit](https://aws.amazon.com/marketplace/pp/prodview-y37q4y3moyaxe)
+- [AWS FinOps Agent (Preview)](https://aws.amazon.com/pt/finops-agent/)
+- [etting started with AWS FinOps Agent](https://docs.aws.amazon.com/finops-agent/latest/userguide/getting-started.html)
 - Estrutura do fluxo: arquivo `Fluxo-ServiceDesk-TI-TESTE-Protocolo.json` (53 ações).
